@@ -6,6 +6,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.Menu;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -26,6 +27,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initView();
         myOpenHelp=new MyOpenHelp(this,"QunYou.db",null,2);
     }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        //第二个参数指定我们菜单项将添加到哪一个菜单对象当中，这里指定的是menu参数
+        getMenuInflater().inflate( R.menu.menu_popup,menu );
+        return true;//创建的菜单显示出来
+    }
+
 
     @Override
     public void  onClick(View view){
