@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -36,6 +37,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         return true;//创建的菜单显示出来
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+
+        switch (item.getItemId()){
+
+            case R.id.add_menu:
+                Toast.makeText( this,"你点击了add item",Toast.LENGTH_SHORT ).show();
+                break;
+
+            case R.id.delete_menu:
+                Toast.makeText( this,"你点击了delete item",Toast.LENGTH_SHORT ).show();
+                break;
+
+            default:
+                break;
+        }
+        return super.onOptionsItemSelected( item );
+    }
 
     @Override
     public void  onClick(View view){
