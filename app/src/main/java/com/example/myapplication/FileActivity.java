@@ -6,9 +6,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
-
-import com.example.myapplication.R;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.FileInputStream;
@@ -38,7 +35,7 @@ public class FileActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_file);
         editText = (EditText)findViewById( R.id.deittext );
-        findViewById( R.id.fileWriterbtn ).setOnClickListener( this );
+        findViewById( R.id.fileSavebtn ).setOnClickListener( this );
         findViewById( R.id.fileReadbtn ).setOnClickListener( this );
     }
 
@@ -106,18 +103,13 @@ public class FileActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (v.getId()){
 
-            case R.id.fileWriterbtn:writeData();
+            case R.id.fileSavebtn:writeData();
                 break;
 
             case R.id.fileReadbtn:readData();
                 break;
 
             default:break;
-
         }
-
-
-
-
     }
 }
