@@ -47,7 +47,7 @@ public class FileActivity extends AppCompatActivity implements View.OnClickListe
         BufferedWriter bufferedWriter = null;
         Log.v( "输入的内容:",dataString );
         try {
-            FileOutputStream fileOutputStream = openFileOutput("data", Context.MODE_PRIVATE);
+            FileOutputStream fileOutputStream = openFileOutput("tupian", Context.MODE_PRIVATE);
             OutputStreamWriter OutputStreamWriter = new OutputStreamWriter(fileOutputStream);
             bufferedWriter = new BufferedWriter(OutputStreamWriter);
             bufferedWriter.write( dataString);
