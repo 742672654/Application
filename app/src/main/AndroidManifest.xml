@@ -2,11 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.myapplication">
 
-
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-
-
 
     <application
         android:allowBackup="true"
@@ -15,7 +11,28 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GuangboActivity">
+
+        <receiver
+            android:name=".guangbo.MyReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="80">
+                <action android:name="com.example.myapplication.guangbo_me" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".guangbo.MyReceiver2"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="50">
+                <action android:name="com.example.myapplication.guangbo_me" />
+
+
+            </intent-filter>
+        </receiver>
+
+
+        <activity android:name=".guangbo.GuangboActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
