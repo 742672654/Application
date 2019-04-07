@@ -12,9 +12,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
-
 import com.example.myapplication.R;
-import com.example.myapplication.gongnen.taigan.taigan;
+
 
 public class GuangboActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -28,6 +27,10 @@ public class GuangboActivity extends AppCompatActivity implements View.OnClickLi
 
     //4.本地广播:只能在本应用程序之间传递，效率更高
     //          LocalBroadcastReceiver 本地广播 动态注册
+    //使用方法:获得本地广播管理者实例，使用实例发送、注册、取消
+
+
+    //经典案例:实现强制下线(比如一个手机两个QQ)
 
     MyBroadCastReceiver myBroadCastReceiver;
     LocalBroadCastReceiver localBroadCastReceiver;
