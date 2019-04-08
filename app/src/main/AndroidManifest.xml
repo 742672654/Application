@@ -32,7 +32,7 @@
         </receiver>
 
 
-        <activity android:name=".ui.KongjianActicity">
+        <activity android:name=".ui.RelativeLayoutActicity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
