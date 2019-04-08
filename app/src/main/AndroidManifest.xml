@@ -32,7 +32,7 @@
         </receiver>
 
 
-        <activity android:name=".ui.RelativeLayoutActicity">
+        <activity android:name=".ui.fragment.fragment0">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
