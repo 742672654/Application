@@ -44,4 +44,40 @@
         android:layout_height="wrap_content"
         android:layout_centerInParent="true"/>
 
+    <Button
+        android:id="@+id/relative_btn6"
+        android:text="btn6"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relative_btn5"
+        android:layout_toLeftOf="@id/relative_btn5"/>
+
+    <Button
+        android:id="@+id/relative_btn7"
+        android:text="btn7"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/relative_btn5"
+        android:layout_toRightOf="@id/relative_btn5"/>
+
+    <Button
+        android:id="@+id/relative_btn8"
+        android:text="btn8"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_btn5"
+        android:layout_toLeftOf="@id/relative_btn5"/>
+
+    <Button
+        android:id="@+id/relative_btn9"
+        android:text="btn9"
+        android:textAllCaps="false"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative_btn5"
+        android:layout_toRightOf="@id/relative_btn5"/>
+
 </RelativeLayout>

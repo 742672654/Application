@@ -11,7 +11,7 @@ public class RelativeLayoutActicity extends AppCompatActivity implements View.On
     @Override
     public void onCreate(Bundle v) {
         super.onCreate(v);
-        setContentView( R.layout.relative_layout);
+        setContentView( R.layout.layout_relative);
     }
 
     @Override

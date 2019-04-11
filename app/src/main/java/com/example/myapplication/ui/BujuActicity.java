@@ -12,7 +12,7 @@ public class BujuActicity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onCreate(Bundle v) {
         super.onCreate(v);
-        setContentView(R.layout.linear_layout);
+        setContentView(R.layout.layout_linear);
 
     }
 
