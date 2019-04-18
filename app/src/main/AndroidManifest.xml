@@ -32,13 +32,25 @@
         </receiver>
 
 
-        <activity android:name=".ui.fragment.fragment0">
+        <activity android:name="com.example.myapplication.intent.Intent_cuanzhi">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.example.myapplication.intent.Intent_cuanzhi2">
+            <intent-filter>
+                <action android:name="android.intent.action.Intent_cuanzhi2.cesi"/>
+                <category android:name="android.intent.category.Intent_cuanzhi2.cesi"/>
+
+                <category android:name="android.intent.category.DEFAULT"/><!-- 必须包含这个常量-->
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.example.myapplication.intent.Intent_cuanzhi3"></activity>
+
     </application>
 
 </manifest>

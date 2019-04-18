@@ -23,7 +23,7 @@ public class LeftFragment extends Fragment implements View.OnClickListener{
         this.mContext = getActivity();
 
         View view = inflater.inflate(R.layout.fragment_left,container,false);
-        view.findViewById( R.id.left_fragment_btn ).setOnClickListener( this );
+       // view.findViewById( R.id.left_fragment_btn ).setOnClickListener( this );
         return view;
     }
 

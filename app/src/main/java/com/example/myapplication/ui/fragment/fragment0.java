@@ -23,8 +23,6 @@ public class fragment0 extends AppCompatActivity implements View.OnClickListener
         setContentView(R.layout.fragent0);
 
         findViewById(R.id.left_fragment_btn).setOnClickListener( this );
-
-
     }
 
     int s = 0;
