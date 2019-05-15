@@ -1,7 +1,9 @@
 package com.example.myapplication.intent;
 
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -35,6 +37,24 @@ public class Intent_cuanzhi extends AppCompatActivity implements View.OnClickLis
 
     @Override
     public void onClick(View v) {
+
+
+        SharedPreferences spf = getApplicationContext().getSharedPreferences("zld_config",Context.MODE_PRIVATE);
+        SharedPreferences.Editor spfEdit = spf.edit();
+        spfEdit.putBoolean("is_first", false);
+        spfEdit.commit();
+
+
+        SharedPreferences sp = getApplicationContext().getSharedPreferences("zld_config", Context.MODE_MULTI_PROCESS);
+
+
+        Toast.makeText( this,sp.getBoolean("yessir", false)+"",Toast.LENGTH_SHORT ).show();
+
+
+
+
+
+
 
 // TODO:  显式 Intent
 //         Intent intent = new Intent(Intent_cuanzhi.this, Intent_cuanzhi2.class);
